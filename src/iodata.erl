@@ -21,7 +21,7 @@ split(N, Bin) when is_binary(Bin) ->
 split(N, IOList) ->
     case split_iolist(N, IOList, {0, []}) of
         {_, _} = Split -> Split;
-        _Size -> erlang:error(badard)
+        _Size -> erlang:error(badarg)
     end.
 
 
